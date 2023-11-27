@@ -1,0 +1,55 @@
+.header {
+    padding-top: 175px;
+    min-height: 895px;
+    background-image: url(img/header_bg.png);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header h1 {
+    width: 440px;
+    color: #01996D;
+    font-family: 'Georgia', serif;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.header p {
+    width: 420px;
+    color: #484848;
+    line-height: 157%; /* 31.4px */
+    margin-bottom: 18px;
+}
+
+.header button {
+    width: 227px;
+    height: 65px;
+
+}
+@media screen and (max-width:1436px) {
+    .header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width:498px) {
+
+    .header h1 {
+        width: 100%;
+     
+    }
+
+    .header p {
+        width: 100%;
+  
+    }
+}
+
+
+
+
