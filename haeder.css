@@ -1,4 +1,59 @@
-.header {
+
+.header_upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: 23px;
+}
+
+.nav_list {
+    display: flex;
+}
+
+.nav_list li {
+    margin-right: 72px;
+}
+
+.nav_list li:last-child {
+    margin-right: 0px;
+}
+
+.nav_list li a,
+.user_info a {
+    color: #292929;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+}
+
+.user_info a {
+    margin-right: 35px;
+}
+
+.user_info-btn {
+    width: 183px;
+    height: 51px;
+    border-radius: 4px;
+    border: 1px solid #01996D;
+    background: #01996D; 
+    text-align: center;
+    color: #FFF;
+    font-style: normal;
+    line-height: 25px; /* 125% */
+}
+
+
+
+.header_lower {
     padding-top: 175px;
     min-height: 895px;
     background-image: url(img/header_bg.png);
@@ -7,7 +62,7 @@
     background-size: cover;
 }
 
-.header h1 {
+.header_lower h1 {
     width: 440px;
     color: #01996D;
     font-family: 'Georgia', serif;
@@ -18,38 +73,71 @@
     margin-bottom: 30px;
 }
 
-.header p {
+.header_lower p {
     width: 420px;
     color: #484848;
     line-height: 157%; /* 31.4px */
     margin-bottom: 18px;
 }
 
-.header button {
+.header_lower button {
     width: 227px;
     height: 65px;
 
 }
-@media screen and (max-width:1436px) {
-    .header {
-        padding-left: 15px;
-        padding-right: 15px;
+
+@media screen and (max-width:1655px) {
+    .header_upper,
+    .header_lower {
+        padding: 0 15px;
     }
 }
 
-@media screen and (max-width:498px) {
-
-    .header h1 {
-        width: 100%;
-     
+@media screen and (max-width:1600px) {
+    .header_upper {
+       flex-direction: column;
+       
     }
 
-    .header p {
-        width: 100%;
-  
-    }
+   .logo,
+   .nav_list,
+   .user_info {
+        margin-bottom: 10px;
+   }
 }
 
+@media screen and (max-width:685px) {
+    .header_upper {
+       flex-direction: column;
+       align-items: flex-start;
+       
+    }
 
+   .logo,
+   .nav_list,
+   .user_info {
+        margin-bottom: 10px;
+   }
 
+   .nav_list,
+   .user_info {
+        flex-direction: column;     
+   }
 
+  .nav_list li {
+        margin-right: 0px;
+        margin-bottom: 10px;
+}
+   .user_info {
+    align-items: flex-start;
+   }
+
+   .user_info a {
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+.header_lower h1, 
+.header_lower p {
+    width: 100%;
+}
+}g
